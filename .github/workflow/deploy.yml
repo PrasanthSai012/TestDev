@@ -45,16 +45,16 @@ jobs:
       - name: Publish to Anypoint Exchange
         run: |
           mvn deploy -s settings.xml \
-            -DconnectedAppClientId=988e49247ac4469ba7ba48f8f4d81418 \
-            -DconnectedAppClientSecret=4C0b4feF6E10404CA4d9583374CF90E8 \
-            -DbusinessGroupId=e721e92f-d213-4840-bb8f-6d4d4ebc02b5
+            -DconnectedAppClientId=ca438b3a5de54581bf83c7b756b46579 \
+            -DconnectedAppClientSecret=e06BBD80b6564533B8d89b221df860b5\
+            -DbusinessGroupId=70de3286-bd1a-4778-b69f-4d3050e04f74
 
       - name: Deploy to CloudHub 2.0
         run: |
           mvn deploy -DmuleDeploy -s settings.xml \
-            -DconnectedAppClientId=988e49247ac4469ba7ba48f8f4d81418 \
-            -DconnectedAppClientSecret=4C0b4feF6E10404CA4d9583374CF90E8 \
+            DconnectedAppClientId=ca438b3a5de54581bf83c7b756b46579 \
+            -DconnectedAppClientSecret=e06BBD80b6564533B8d89b221df860b5\
             -DappName=ci-cd-project \
             -Denv=Sandbox \
-            -DbusinessGroupId=e721e92f-d213-4840-bb8f-6d4d4ebc02b5 \
+             -DbusinessGroupId=70de3286-bd1a-4778-b69f-4d3050e04f74\
             -Dtarget=Cloudhub-US-East-1
