@@ -54,7 +54,7 @@ jobs:
           mvn deploy -DmuleDeploy -s settings.xml \
             DconnectedAppClientId=ca438b3a5de54581bf83c7b756b46579 \
             -DconnectedAppClientSecret=e06BBD80b6564533B8d89b221df860b5\
-            -DappName=ci-cd-project \
-            -Denv=Sandbox \
+            -DappName=test-sap-poc123\
+            -Denv=Sandbox\
              -DbusinessGroupId=70de3286-bd1a-4778-b69f-4d3050e04f74\
             -Dtarget=Cloudhub-US-East-1
